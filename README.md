@@ -1,21 +1,11 @@
 # Moxtest
 
-**TODO: Add description**
+testing mox
 
-## Installation
+## Running
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `moxtest` to your list of dependencies in `mix.exs`:
+run `mix test` at the commandline in the moxtest directory.
 
-```elixir
-def deps do
-  [
-    {:moxtest, "~> 0.1.0"}
-  ]
-end
-```
+note that the second test (which only outputs an IO.inspect on the returned function) returns an error code 500 instead of correctly trampolining to the mock module.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/moxtest](https://hexdocs.pm/moxtest).
 
